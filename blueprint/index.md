@@ -8,18 +8,26 @@ category: 7
 summary: |
   This Genesys Cloud Developer Blueprint provides instructions for adding voice call IVR deflection to Facebook Messenger.
 ---
-This Genesys Cloud Developer Blueprint provides instructions for reducing call volume by deflecting voice calls from an IVR to Facebook Messenger. This solution also routes messages from Facebook Messenger to Genesys Cloud where our ACD messaging routes them to a self-service bot or agent. 
+This Genesys Cloud Developer Blueprint provides instructions for reducing call volume by deflecting voice calls from an IVR to Facebook Messenger. This solution also routes messages from Facebook Messenger to Genesys Cloud where our ACD messaging routes them to a self-service bot or agent.
 
 ![Flowchart for the Facebook IVR deflection](images/fb-ivr-deflection.png "Facebook IVR deflection")
+
+:::primary
+**Tip**: There are many ways you can use call deflection to provide superior customer service by giving your customers the choice of how and when to engage with you. For example:
+* Deflect calls to other digital channels, such as WhatsApp, Twitter DM, and more.
+* Include a QR code in your Messenger experience to make it even easier for customers to reach you.
+
+For more ideas, see [Suggestions for an even better experience](#suggestions-for-an-even-better-experience "Goes to the Suggestions for an even better experience section"). For technical implementation assistance, contact your Genesys Professional Services team.
+:::
 
 ## Scenario
 
 Your business wants to offer your voice-calling customers the option to connect with your support team via Facebook Messenger. By doing so, you take advantage of these benefits:
 
+* Superior customer service (you give your customers the flexibility and convenience to message asynchronously on their schedule)
 * Increased efficiency (asynchronous messaging enables your agents to handle multiple interactions simultaneously)
 * Enhanced bot and auto-response options
 * Ability to send images and other media attachments
-* Flexibility and convenience (your customers can message asynchronously on their schedule)
 * Customers retain a record of the interaction
 
 ## Solution
@@ -31,6 +39,7 @@ Your voice call flow offers calling customers the option to use Facebook Messeng
 * [Solution components](#solution-components "Goes to the Solutions components section")
 * [Prerequisites](#prerequisites "Goes to the Prerequisites section")
 * [Implementation steps](#implementation-steps "Goes to the Implementation steps section")
+* [Suggestions for an even better experience](#suggestions-for-an-even-better-experience "Goes to the Suggestions for an even better experience section")
 * [Additional resources](#additional-resources "Goes to the Additional resources section")
 
 ## Solution components
@@ -165,8 +174,9 @@ For information on how to create a user name for your Facebook page, see [How do
 :::primary
 **Important**
 Messages sent to your Facebook page via Facebook Messenger should be routed to your Genesys Cloud org.
+:::
 
- For more information about integrating Facebook Messenger with Genesys Cloud, see [Configure ACD messaging for Facebook Messenger](https://help.mypurecloud.com/?p=164903 "Goes to the Configure ACD messaging for Facebook Messenger article") in the Genesys Cloud Resource Center.
+For more information about integrating Facebook Messenger with Genesys Cloud, see [Configure ACD messaging for Facebook Messenger](https://help.mypurecloud.com/?p=164903 "Goes to the Configure ACD messaging for Facebook Messenger article") in the Genesys Cloud Resource Center.
 
 ### Import the call flow
 
@@ -235,14 +245,18 @@ For more information on call routing and schedule-based routing, see [Call routi
 
 ## Suggestions for an even better experience
 
-* Promote Facebook Messenger proactively
-  * Add your m.me link to your website and email signatures
-  * Create a QR code for your m.me link so your customers can scan it § https://www.qrcode-monkey.com/
-* Add flow outcomes to your inbound call flow so you can report on the effectiveness of your deflection to Facebook Messenger:
+There are many ways to use call deflection to improve customer experience. For example:
+* Promote Facebook Messenger proactively by adding your m.me link to your website and email signatures.
+* Create a [QR code](https://www.qrcode-monkey.com/ "Goes to the QR Code Monkey site") for your m.me link so your customers can scan it.
+    ![QR code](images/qrcode.png "Make it easier to chat with a QR code")
+
+To report on the effectiveness of your deflection to Facebook Messenger, improve your use of flow outcomes in your inbound call flow:
   * Add a **Deflected to Facebook Messenger** flow outcome to Genesys Cloud. For more information, see [Add a flow outcome](https://help.mypurecloud.com/?p=185383 "Goes to the Add a flow outcome article") in the Genesys Cloud Resource Center.
   * Set the Flow Outcome action in your inbound call flow after you have sent the SMS with the m.me link. For more information, see [Set Flow Outcome action](https://help.mypurecloud.com/?p=185391 "Goes to the Set Flow Outcome action article") in the Genesys Cloud Resource Center.
+
+Finally, consider the following refinements to improve the quality and maintainability of your call deflection experience:   
 * Replace TTS with professionally recorded prompts.
-* Move the parameters such as your From: SMS number and M.me link to a data table in Genesys Cloud to simplify administration.
+* Move the parameters (such as your From: SMS number and M.me link) to a data table in Genesys Cloud to simplify administration.
 
 ## Additional resources
 
