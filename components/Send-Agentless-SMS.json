@@ -1,0 +1,45 @@
+{
+  "name": "Send Agentless SMS Notification - Exported 2021-07-20 @ 15:53",
+  "integrationType": "purecloud-data-actions",
+  "actionType": "custom",
+  "config": {
+    "request": {
+      "requestUrlTemplate": "/api/v2/conversations/messages/agentless",
+      "requestType": "POST",
+      "headers": {},
+      "requestTemplate": "{\n  \"fromAddress\": \"${input.from}\",\n  \"toAddress\": \"${input.to}\",\n  \"toAddressMessengerType\": \"sms\",\n  \"textBody\": \"$esc.jsonString(${input.body})\"\n}"
+    },
+    "response": {
+      "translationMap": {},
+      "translationMapDefaults": {},
+      "successTemplate": "${rawResult}"
+    }
+  },
+  "contract": {
+    "input": {
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "from": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "output": {
+      "successSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      }
+    }
+  },
+  "secure": false
+}
