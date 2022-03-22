@@ -3,7 +3,7 @@ title: Deflect voice calls from an IVR to Facebook Messenger
 author: R. J. Smith
 indextype: blueprint
 icon: blueprint
-image: assets/img/ivr_deflection_diagram.png
+image: images/fb-ivr-deflection.png
 category: 7
 summary: |
   This Genesys Cloud Developer Blueprint provides instructions for adding voice call IVR deflection to Facebook Messenger.
