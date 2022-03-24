@@ -1,5 +1,5 @@
 ---
-title: Deflect voice calls from an IVR to Facebook Messenger
+title: Call deflection blueprint
 author: R. J. Smith
 indextype: blueprint
 icon: blueprint
