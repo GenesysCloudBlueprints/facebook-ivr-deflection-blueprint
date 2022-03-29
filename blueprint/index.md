@@ -6,9 +6,9 @@ icon: blueprint
 image: images/fb-ivr-deflection.png
 category: 7
 summary: |
-  This Genesys Cloud Developer Blueprint provides instructions for adding voice call IVR deflection to Facebook Messenger.
+  This Genesys Cloud Developer Blueprint provides instructions for reducing call volume by deflecting voice calls to a messaging channel. Specifically, this blueprint shows how to deflect voice calls from an IVR to Facebook Messenger.
 ---
-This Genesys Cloud Developer Blueprint provides instructions for reducing call volume by deflecting voice calls from an IVR to Facebook Messenger. This solution also routes messages from Facebook Messenger to Genesys Cloud where our ACD messaging routes them to a self-service bot or agent.
+ This Genesys Cloud Developer Blueprint provides instructions for reducing call volume by deflecting voice calls to a messaging channel. Specifically, this blueprint shows how to deflect voice calls from an IVR to Facebook Messenger.This solution also routes messages from Facebook Messenger to Genesys Cloud where our ACD messaging routes them to a self-service bot or agent.
 
 ![Flowchart for the Facebook IVR deflection](images/fb-ivr-deflection.png "Facebook IVR deflection")
 
