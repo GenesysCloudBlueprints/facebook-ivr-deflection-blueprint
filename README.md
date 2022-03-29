@@ -1,4 +1,4 @@
-# Deflect voice calls from an IVR to Facebook Messenger
+# Call deflection blueprint (Facebook Messenger)
 
 > View the full [Deflect voice calls from an IVR to Facebook Messenger ](https://developer.mypurecloud.com/blueprints/) article on the Genesys Cloud Developer Center.
 
