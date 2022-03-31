@@ -8,12 +8,13 @@ category: 7
 summary: |
   This Genesys Cloud Developer Blueprint provides instructions for reducing call volume by deflecting voice calls to a messaging channel. Specifically, this blueprint shows how to deflect voice calls from an IVR to Facebook Messenger.
 ---
- This Genesys Cloud Developer Blueprint provides instructions for reducing call volume by deflecting voice calls to a messaging channel. Specifically, this blueprint shows how to deflect voice calls from an IVR to Facebook Messenger. This solution also routes messages from Facebook Messenger to Genesys Cloud where our ACD messaging routes them to a self-service bot or agent. Try it out live by calling +1 (833) 750-3050.
+ This Genesys Cloud Developer Blueprint provides instructions for reducing call volume by deflecting voice calls to a messaging channel. Specifically, this blueprint shows how to deflect voice calls from an IVR to Facebook Messenger. This solution also routes messages from Facebook Messenger to Genesys Cloud where our ACD messaging routes them to a self-service bot or agent. 
 
 ![Flowchart for the Facebook IVR deflection](images/fb-ivr-deflection.png "Facebook IVR deflection")
 
 :::primary
 **Tip**: There are many ways you can use call deflection to provide superior customer service by giving your customers the choice of how and when to engage with you. For example:
+
 * Deflect calls to other digital channels, such as WhatsApp, Twitter DM, and more.
 * Include a QR code in your Messenger experience to make it even easier for customers to reach you.
 
@@ -34,13 +35,12 @@ Your business wants to offer your voice-calling customers the option to connect 
 
 Your voice call flow offers calling customers the option to use Facebook Messenger. If they accept, the flow uses a Genesys Cloud data action to invoke the agentless SMS API. This API sends a text message to the customer. This text message includes a Facebook Messenger m.me URL which directs the customer to your Facebook Messenger experience.
 
-## Contents
+<iframe src="https://player.vimeo.com/video/694155291?h=47c79c9872" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/694155291">Call deflection to Facebook Messenger</a> from <a href="https://vimeo.com/user136605203">Cristina Vargas</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-* [Solution components](#solution-components "Goes to the Solutions components section")
-* [Prerequisites](#prerequisites "Goes to the Prerequisites section")
-* [Implementation steps](#implementation-steps "Goes to the Implementation steps section")
-* [Suggestions for an even better experience](#suggestions-for-an-even-better-experience "Goes to the Suggestions for an even better experience section")
-* [Additional resources](#additional-resources "Goes to the Additional resources section")
+## Try the Live Demo +1 (833) 750-3050
+
+![Try the live demo](images/live-demo-slide.png "Slide showing how to try the live demo")
 
 ## Solution components
 
