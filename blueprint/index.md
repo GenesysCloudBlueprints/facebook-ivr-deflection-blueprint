@@ -78,8 +78,8 @@ Your voice call flow offers calling customers the option to use Facebook Messeng
 * [Create an OAuth client with the new role](#create-an-oauth-client-with-the-new-role "Goes to the Create an OAuth client with the new role section")
 * [Add the data action integration](#add-the-data-action-integration "Goes to the Add the data action integration section")
 * [Import and test the data action](#import-and-test-the-data-action "Goes to the Import and test the data action section")
-* [Create and test your Facebook Messenger m.me link](#create-and-test-your-facebook-messenger-m.me-link "Goes to the Create and test your Facebook Messenger m.me link section")
-* [Import the call flow](#import-and-update-the-call-flow "Goes to the Import and update the call flow section")
+* [Create and test your Facebook Messenger m.me link](#create-and-test-your-facebook-messenger-mme-link "Goes to the Create and test your Facebook Messenger m.me link section")
+* [Import the call flow](#import-the-call-flow "Goes to the Import and update the call flow section")
 * [Update the call flow](#update-the-call-flow "Goes to the Update the call flow section")
 * [Route your inbound phone number to the call flow](#route-your-inbound-phone-number-to-the-call-flow "Goes to the Route your inbound phone number to the call flow section")
 * [Test your solution](#test-your-solution "Goes to the Test your solution section")
@@ -139,7 +139,7 @@ For more information, see [Add an integration](https://help.mypurecloud.com/?p=1
 
 ### Import and test the data action
 
-1. Go to the [facebook-ivr-deflection-blueprint repository](https://github.com/MyPureCloud/facebook-ivr-deflection-blueprint "Opens the facebook-ivr-deflection-blueprint GitHub repository") in GitHub and download the files.
+1. Go to the [facebook-ivr-deflection-blueprint repository](https://github.com/GenesysCloudBlueprints/facebook-ivr-deflection-blueprint "Opens the facebook-ivr-deflection-blueprint GitHub repository") in GitHub and download the files.
 2. Import the data action file.
 
   i. In **Integrations** > **Actions**, search for and select the Send Agentless SMS Notification file.
@@ -153,7 +153,7 @@ For more information, see [Add an integration](https://help.mypurecloud.com/?p=1
     * **Body**: a test message. For example, `Hello there`.
 
 4. Click **Run Action**.
-5. Verify that the output is successful and that you receive the message at the destination SMS number. If any error occurs, verify your [OAuth client]((#configure-an-oauth-client-for-the-data-action "Goes to the Configure and OAuth client for the data action section") and [integration]((#add-the-data-action-integration "Goes to the Add the data action integration section") credentials.
+5. Verify that the output is successful and that you receive the message at the destination SMS number. If any error occurs, verify your [OAuth client](#create-an-oauth-client-with-the-new-role "Goes to the Create an OAuth client with the new role section") and [integration](#add-the-data-action-integration "Goes to the Add the data action integration section") credentials.
 6. When everything works as expected, click **Save & Publish**.
 
   ![Published data action](images/data-action-published.png "Published data action")  
